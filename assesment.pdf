@@ -1,0 +1,27 @@
+Question 3. Please provide a brief written answer to the following question. The coding assessment focused on a batch backfilling use case. If the use case was extended to required incrementally loading new match data on a go-forward basis, how would your solution change?
+If the use case is extended to require incrementally loading new match data on a go-forward basis, the solution would change in the following ways:
+->
+Real-Time Data Ingestion: Implement a real-time data ingestion system that can continuously receive and process new data as it becomes available.
+
+Change Data Capture (CDC): Integrate a CDC mechanism to capture and process only the changes in the source data, reducing the need to reload entire datasets.
+
+Data Versioning: Implement a versioning system to track changes and maintain historical data.
+
+Automated Scheduling: Set up automated scheduling for data ingestion processes, ensuring they run at specified intervals or in response to events.
+
+Monitoring and Alerting: Enhance monitoring and alerting systems to detect issues in real time, as incremental loading may introduce new challenges.
+
+Question 4. Can you provide an example of when, during a project or analysis, you learned about (or created) a new technique, method, or tool that you hadn’t known about previously? What inspired you to learn about this and how were you able to apply it?
+->
+In a previous project, I learned about and implemented a technique called "Data Profiling" to better understand and cleanse a large and complex dataset. The project involved dealing with a vast dataset from various sources with inconsistent formats and data quality issues.
+
+I was inspired to learn about data profiling as we needed to identify data anomalies, missing values, outliers, and patterns within the dataset to ensure data accuracy and consistency. Data profiling tools and techniques helped in this endeavor.
+
+Here's how I applied it:
+
+1.I used open-source data profiling tools to analyze the dataset automatically, generating statistics and visualizations.
+2.Identified missing data, data distributions, and relationships between attributes.
+3.Discovered anomalies and outliers.
+4.Cleaned the data based on the insights gained through profiling.
+
+This technique significantly improved data quality and allowed us to make informed decisions when designing data pipelines and transformations. It also served as a foundation for data cleansing and validation processes.
